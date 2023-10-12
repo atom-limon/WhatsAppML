@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        android:background="@drawable/iwall"
+        android:id="@+id/svMainView"
+        android:padding="14dp"
+        tools:context=".SignInActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_logo"
+            android:src="@drawable/whatsapplogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            app:layout_constraintStart_toStartOf="@id/iv_logo"
+            app:layout_constraintEnd_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.03"
+            android:hint="Email"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            app:layout_constraintStart_toStartOf="@id/et_email"
+            app:layout_constraintEnd_toEndOf="@id/et_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#fff"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_createaccount"
+            app:layout_constraintStart_toStartOf="@id/et_password"
+            app:layout_constraintEnd_toEndOf="@id/et_password"
+            app:layout_constraintTop_toBottomOf="@id/et_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            android:text="Create Account"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            app:layout_constraintStart_toStartOf="@id/tv_createaccount"
+            app:layout_constraintEnd_toEndOf="@id/tv_createaccount"
+            app:layout_constraintTop_toBottomOf="@id/tv_createaccount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="Sign In"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:backgroundTint="#40A144"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/iv_googlelogo"
+            android:src="@drawable/google"
+            app:layout_constraintStart_toStartOf="@id/btn_signup"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup"
+            app:layout_constraintEnd_toStartOf="@id/btn_googlesignup"
+            android:layout_marginTop="16dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_googlesignup"
+            app:layout_constraintStart_toEndOf="@id/iv_googlelogo"
+            app:layout_constraintTop_toTopOf="@id/iv_googlelogo"
+            app:layout_constraintEnd_toStartOf="@id/iv_facebook"
+            android:text="Sign up"
+            android:textColor="#DC1515"
+            android:textSize="18sp"
+            android:background="#FFC107"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook"
+            android:id="@+id/iv_facebook"
+            app:layout_constraintStart_toEndOf="@id/btn_googlesignup"
+            app:layout_constraintTop_toTopOf="@id/btn_googlesignup"
+            app:layout_constraintEnd_toStartOf="@+id/btn_facebooksignup"
+            app:layout_constraintHorizontal_bias="0.1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_facebooksignup"
+            app:layout_constraintStart_toEndOf="@id/iv_facebook"
+            app:layout_constraintEnd_toEndOf="@id/btn_signup"
+            app:layout_constraintTop_toTopOf="@id/iv_facebook"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#03A9F4"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_phonesignin"
+            app:layout_constraintStart_toStartOf="@id/iv_googlelogo"
+            app:layout_constraintEnd_toEndOf="@id/btn_facebooksignup"
+            app:layout_constraintTop_toBottomOf="@id/btn_googlesignup"
+            android:layout_marginTop="20dp"
+            android:text="  sign up with phone  "
+            android:textSize="18sp"
+            android:background="#3F51B5"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
