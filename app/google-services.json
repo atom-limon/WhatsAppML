@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200399655233",
+    "project_id": "whatsappml-bddc6",
+    "storage_bucket": "whatsappml-bddc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200399655233:android:a0ee86afa517c07c0291c0",
+        "android_client_info": {
+          "package_name": "com.example.whatsappml"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPSmCo8ZsfphlkCn_A7yIdm7QmQk3lTz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
