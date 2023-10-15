@@ -77,6 +77,10 @@ class MainActivity : AppCompatActivity() {
                                     //if user created successfully
                                     dbref.child(dbauth.currentUser!!.uid).child("username").setValue(usrname)
                                     Toast.makeText(applicationContext, "Sign Up Successfull", Toast.LENGTH_SHORT).show()
+                                    //now pass the user to the sign in activity to log in
+                                    var intent:Intent = Intent(applicationContext,SignInActivity::class.java)
+                                    startActivity(intent)
+                                    finish()    //finish signup activity after successfull account creation
                                 }
                                 else{
                                     //if fails
